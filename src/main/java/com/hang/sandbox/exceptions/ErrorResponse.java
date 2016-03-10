@@ -1,4 +1,6 @@
-package errors;
+package com.hang.sandbox.exceptions;
+
+import org.springframework.stereotype.Component;
 
 public class ErrorResponse {
 
