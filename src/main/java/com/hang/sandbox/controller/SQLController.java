@@ -12,8 +12,12 @@ public class SQLController {
     public @ResponseBody String getSQL(@RequestParam int id) throws SQLException {
         if (id == 1) {
             return "select * from table where id = " + id;
-        } else {
+        } else if (id == 2) {
             throw new SQLException();
+        } else if (id == 3) {
+            throw new ArithmeticException();
+        } else {
+            throw new ClassCastException();
         }
     }
 }
